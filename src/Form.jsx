@@ -26,6 +26,7 @@ function Form() {
         </label>
 
           <input
+          name="FirstName"
             required
             type="text"
             value={firstName}
@@ -38,6 +39,7 @@ function Form() {
         </label>
 
           <input
+          name="LastName"
             required
             value={LastName}
             onChange={(e) => setLastName(e.target.value)}
