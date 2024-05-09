@@ -4,15 +4,16 @@ function Form() {
   const [LastName, setLastName] = useState("");
   const [fullName, setFull] = useState("");
   const [yes, setYes] = useState(false);
-
+// const[]  = useState("")
   const handleSubmit = (event) => {
     event.preventDefault();
     // const fullName = {firstName} {LastName};
 
     // setFull(fullName);
     setYes(true);
-    setFirstName("");
-    setLastName("");
+    
+    // setFirstName("");
+    // setLastName("");
   };
 
   return (
