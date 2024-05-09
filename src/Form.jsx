@@ -5,6 +5,7 @@ function Form() {
   const [fullName, setFull] = useState("");
   const [yes, setYes] = useState(false);
 // const[]  = useState("")
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // const fullName = {firstName} {LastName};
@@ -22,27 +23,32 @@ function Form() {
         <h1>Full Name Display </h1>
         <label>
           First Name:
+        </label>
+
           <input
             required
             type="text"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
-        </label>
+        
         <br />
         <label>
           Last Name:
+        </label>
+
           <input
             required
             value={LastName}
             onChange={(e) => setLastName(e.target.value)}
           />
-        </label>
+
         <br />
         <button type="submit">Submit </button>
 
-        {yes && <p>Full Name:{firstName} {LastName} </p>}
       </form>
+      {yes && <p>Full Name:{firstName} {LastName} </p>}
+
     </div>
   );
 }
