@@ -7,8 +7,9 @@ function Form() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const fullName = `${firstName} ${LastName}`;
-    setFull(fullName);
+    // const fullName = {firstName} {LastName};
+
+    // setFull(fullName);
     setYes(true);
     setFirstName("");
     setLastName("");
@@ -38,7 +39,8 @@ function Form() {
         </label>
         <br />
         <button type="submit">Submit </button>
-        {yes && <p>Full Name:{fullName} </p>}
+
+        {yes && <p>Full Name:{firstName} {LastName} </p>}
       </form>
     </div>
   );
